@@ -1,0 +1,26 @@
+<!-- <mat-sidenav-container>
+  <mat-sidenav mode="side" opened> -->
+ 
+    <div class="menu">
+      <div class="logo">
+        <img src="assets/logoFletx.jpg" alt="FletX" />
+      </div>
+      <div class="menu-item" *ngFor="let section of menuItems">
+        <button mat-button class="menu-title" (click)="toggleSection(section)">
+          <mat-icon>{{ section.icon }}</mat-icon>
+          <span>{{ section.title }}</span>
+          <mat-icon>{{
+            section.expanded ? "expand_less" : "expand_more"
+          }}</mat-icon>
+        </button>
+        <div class="submenu" *ngIf="section.expanded">
+          <button mat-button *ngFor="let item of section.submenu">
+            {{ item }}
+          </button>
+        </div>
+      </div>
+    </div>
+  
+ 
+  <!-- </mat-sidenav>
+</mat-sidenav-container> -->

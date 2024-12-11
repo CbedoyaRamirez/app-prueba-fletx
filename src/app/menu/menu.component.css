@@ -1,0 +1,40 @@
+.menu {
+    width: 250px;
+    background-color: #f4f4f4;
+    height: 100%;
+    padding-top: 100px;
+  
+    .logo {
+      text-align: center;
+      margin-bottom: 20px;
+  
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+    }
+  
+    .menu-item {
+      margin-bottom: 10px;
+  
+      .menu-title {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        text-align: left;
+        color: #333;
+        font-weight: bold;
+      }
+  
+      .submenu {
+        padding-left: 20px;
+  
+        button {
+          color: #666;
+          text-align: left;
+          width: 100%;
+        }
+      }
+    }
+  }
+  

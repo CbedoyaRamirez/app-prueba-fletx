@@ -1,0 +1,43 @@
+.status-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f8f9fa;
+    border-radius: 12px;
+    padding: 16px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    width: 250px;
+  
+    .icon-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #d9fdd3;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+  
+      .icon {
+        color: #2e7d32; 
+        font-size: 24px;
+      }
+    }
+  
+    .content {
+      text-align: right;
+  
+      .title {
+        font-size: 14px;
+        color: #5f6368;
+        margin: 0;
+      }
+  
+      .count {
+        font-size: 24px;
+        font-weight: bold;
+        color: #333333;
+        margin: 0;
+      }
+    }
+  }
+  

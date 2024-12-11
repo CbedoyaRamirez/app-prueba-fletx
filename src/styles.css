@@ -1,1 +1,76 @@
-/* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    height: 100vh;
+}
+
+.container {
+    width: 100%;
+    display: grid;
+    grid-template-areas:
+        "header header "
+        "sidebar main"
+        "sidebar footer";
+    height: 100vh;
+}
+
+header {
+    grid-area: header;
+    background-color: #ffffff;
+    color: #000;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    -webkit-box-shadow: 3px 18px 35px -18px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 3px 18px 35px -18px rgba(0, 0, 0, 0.75);
+    box-shadow: 3px 18px 35px -18px rgba(0, 0, 0, 0.75);
+}
+
+.sidebar {
+    grid-area: sidebar;
+    background-color: #ffffff;
+    color: white;
+    padding: 1rem;
+}
+
+.main {
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.card-state {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.map-notifications {
+    display: flex;
+    gap: 1rem;
+}
+
+.card-notification {
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    grid-area: footer;
+    display: flex;
+    justify-content: space-between;
+    background-color: #f1f1f1;
+    padding: 1rem;
+    -webkit-box-shadow: 3px 18px 35px -18px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 3px 18px 35px -18px rgba(0, 0, 0, 0.75);
+    box-shadow: 3px 18px 35px -18px rgba(0, 0, 0, 0.75);
+}
