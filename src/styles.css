@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-    width: 100%;
+    width: 100vw;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -15,13 +15,16 @@ body {
     width: 100%;
     display: grid;
     grid-template-areas:
-        "header header "
+        "header header"
         "sidebar main"
         "sidebar footer";
     height: 100vh;
 }
 
 header {
+    width: 100%;
+    position: static;
+    height: 60px;
     grid-area: header;
     background-color: #ffffff;
     color: #000;
@@ -38,7 +41,7 @@ header {
     grid-area: sidebar;
     background-color: #ffffff;
     color: white;
-    padding: 1rem;
+    /* padding: 1rem; */
 }
 
 .main {
@@ -73,4 +76,76 @@ footer {
     -webkit-box-shadow: 3px 18px 35px -18px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 3px 18px 35px -18px rgba(0, 0, 0, 0.75);
     box-shadow: 3px 18px 35px -18px rgba(0, 0, 0, 0.75);
+}
+
+
+.custom-backdrop {
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.custom-modal {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    border-radius: 0;
+    box-shadow: -4px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+
+
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+        display: grid;
+        grid-template-areas:
+            "header"
+            "main"
+            "footer";
+        height: 100vh;
+    }
+    .sidebar {
+        height: 30px;
+        grid-area: sidebar;
+        background-color: #ffffff;
+        color: white;
+    }
+}
+
+@media (max-width: 600px) {
+    .container {
+        width: 100%;
+        display: grid;
+        grid-template-areas:
+            "header"
+            "sidebar"
+            "main"
+            "footer";
+        height: 100vh;
+    }
+    .sidebar {
+        height: 30px;
+        grid-area: sidebar;
+        background-color: #ffffff;
+        color: white;
+    }    
+}
+
+@media (max-width: 600px) {
+    .container {
+        width: 100%;
+        display: grid;
+        grid-template-areas:
+        "header"
+        "sidebar"
+        "main"
+        "footer";
+        height: 100vh;
+    }
+    .sidebar {
+        height: 30px;
+        grid-area: sidebar;
+        background-color: #ffffff;
+        color: white;
+    }
 }

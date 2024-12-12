@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { RegistrosService } from './shared/services/ruby.services';
 import { User } from './shared/interface/user.interface';
+import { MatDialog } from '@angular/material/dialog';
+import { ModalCreateServiceComponent } from './modal-create-service/modal-create-service.component';
 
 @Component({
   selector: 'app-root',
@@ -25,7 +27,9 @@ export class AppComponent implements OnInit {
 
   cardItems: { title: string; color: string; number: number }[] = [];
 
-  constructor(private registrosService: RegistrosService) {
+  constructor(private registrosService: RegistrosService,
+    public dialog: MatDialog
+  ) {
     this.cardItems = [
       {
         title: 'Cond. Activo',
@@ -112,6 +116,21 @@ export class AppComponent implements OnInit {
       },
     });    
   }
+
+  openModal(): void {
+    const dialogRef = this.dialog.open(ModalCreateServiceComponent, {
+      width: '400px', 
+      position: { right: '0px' },
+      panelClass: 'custom-modal', 
+      backdropClass: 'custom-backdrop' 
+    });
+
+    dialogRef.afterClosed().subscribe(result => {
+      if (result === 'confirmed') {
+
+      }
+    });
+  }  
 
 
 }

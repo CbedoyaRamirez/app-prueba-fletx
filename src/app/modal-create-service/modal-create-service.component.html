@@ -1,0 +1,86 @@
+<h2 class="modal-title">Crear nuevo servicio</h2>
+<form>
+  <div class="form-group">
+    <label>Seleccione un cliente</label>
+    <select class="form-control">
+      <option value="">Seleccione</option>
+    </select>
+  </div>
+
+  <div class="form-group">
+    <label>Negocio</label>
+    <input type="text" class="form-control" placeholder="Negocio" />
+  </div>
+
+  <div class="form-group">
+    <label>Número Vehículos</label>
+    <input type="number" class="form-control" placeholder="Número Vehículos" />
+  </div>
+
+  <div class="form-group">
+    <label>Bodegas</label>
+    <select class="form-control">
+      <option value="">Bodegas auto norte - Bogotá => Planta la granjas - Montería</option>
+    </select>
+  </div>
+
+  <div class="form-group">
+    <label>Plantas</label>
+    <div class="row">
+      <div class="col">
+        <input type="text" class="form-control" placeholder="Planta" value="Bodega auto norte" />
+      </div>
+      <div class="col">
+        <select class="form-control">
+          <option>Carga</option>
+          <option>Descarga</option>
+          <option>Descarga/carga</option>
+        </select>
+      </div>
+    </div>
+    <div class="row mt-2">
+      <div class="col">
+        <input type="text" class="form-control" placeholder="Planta" value="Planta medallo" />
+      </div>
+      <div class="col">
+        <select class="form-control">
+          <option>Carga</option>
+          <option>Descarga</option>
+          <option>Descarga/carga</option>
+        </select>
+      </div>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label>Fecha de cargue</label>
+    <div class="row">
+      <div class="col">
+        <select class="form-control">
+          <option>Si</option>
+          <option>No</option>
+        </select>
+      </div>
+      <div class="col">
+        <input type="date" class="form-control" />
+      </div>
+      <div class="col">
+        <select class="form-control">
+          <option>Mañana</option>
+          <option>Tarde</option>
+          <option>Noche</option>
+        </select>
+      </div>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label>Indicaciones del servicio</label>
+    <textarea class="form-control" rows="3" placeholder="Indicaciones del servicio"></textarea>
+  </div>
+
+  <div class="form-actions">
+    <button type="button" class="btn btn-secondary">Cancelar</button>
+    <button type="submit" class="btn btn-danger">Crear servicio</button>
+  </div>
+</form>

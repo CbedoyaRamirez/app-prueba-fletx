@@ -15,6 +15,8 @@ import { CardStateComponent } from './card-state/card-state.component';
 import { CardNotificationComponent } from './card-notification/card-notification.component';
 import { CardMapComponent } from './card-map/card-map.component';
 import { HttpClientModule } from '@angular/common/http';
+import { ModalCreateServiceComponent } from './modal-create-service/modal-create-service.component';
+import { MatDialogModule } from '@angular/material/dialog';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,8 @@ import { HttpClientModule } from '@angular/common/http';
     MenuComponent,
     CardStateComponent,
     CardNotificationComponent,
-    CardMapComponent
+    CardMapComponent,
+    ModalCreateServiceComponent
   ],
   imports: [
     BrowserModule,
@@ -34,7 +37,8 @@ import { HttpClientModule } from '@angular/common/http';
     MatIconModule,
     MatCardModule,
     MatSidenavModule,
-    HttpClientModule 
+    HttpClientModule,
+    MatDialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]

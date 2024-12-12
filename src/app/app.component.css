@@ -1,48 +1,59 @@
 .toolbar {
-    height: 10px;
+  height: 10px;
 }
 
 .card-state {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-    margin-bottom: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-bottom: 30px;
 }
 
 .tabla-container {
-    width: 100%;
-    overflow-x: auto;
-  }
-  
-  .tabla-datos {
-    width: 100%;
-    border-collapse: collapse;
-    font-family: Arial, sans-serif;
-  }
-  
-  .tabla-datos th, .tabla-datos td {
-    border: 1px solid #ddd;
-    padding: 8px;
-    text-align: center;
-  }
-  
-  .tabla-datos th {
-    background-color: #f4f4f4;
-    font-weight: bold;
-  }
-  
-  .codigo-verde {
-    background-color: #4CAF50;
-    color: white;
-    padding: 5px 10px;
-    border-radius: 5px;
-  }
-  
-  .codigo-amarillo {
-    background-color: #FFC107;
-    color: white;
-    padding: 5px 10px;
-    border-radius: 5px;
-    margin: 2px;
-    display: inline-block;
-  }
+  width: 100%;
+  overflow-x: auto;
+}
+
+.tabla-datos {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+}
+
+.tabla-datos th,
+.tabla-datos td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+.tabla-datos th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+}
+
+.codigo-verde {
+  background-color: #4CAF50;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.codigo-amarillo {
+  background-color: #FFC107;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin: 2px;
+  display: inline-block;
+}
+
+.btn {
+  width: 150px;
+  height: 50px;
+  border-radius: 10px;
+  background-color: #000;
+  color: #fff;
+  margin-bottom: 10px
+}
+
