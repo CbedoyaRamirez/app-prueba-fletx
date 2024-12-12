@@ -14,6 +14,7 @@ import {MatSidenavModule} from '@angular/material/sidenav';
 import { CardStateComponent } from './card-state/card-state.component';
 import { CardNotificationComponent } from './card-notification/card-notification.component';
 import { CardMapComponent } from './card-map/card-map.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { CardMapComponent } from './card-map/card-map.component';
     MatToolbarModule,
     MatIconModule,
     MatCardModule,
-    MatSidenavModule
+    MatSidenavModule,
+    HttpClientModule 
   ],
   providers: [],
   bootstrap: [AppComponent]
